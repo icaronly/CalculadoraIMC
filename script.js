@@ -15,9 +15,7 @@ btn.addEventListener("click", (e) => {
     const imc = peso.value / (altura.value * altura.value);
     resultado.innerHTML = "Seu IMC é " + imc.toFixed(2);
     if (sexo.value == "masculino") {
-        if (imc = 0){
-            resultado.innerHTML = "Insira os Valores";
-        } else if (imc < 18.5) {
+        if (imc < 18.5) {
             imagemResultado.innerHTML = `<img src="imagens/1.png" alt="">`;
         } else if (imc > 18.5 && imc <= 24.9) {
             imagemResultado.innerHTML = `<img src="imagens/2.png" alt="">`;
@@ -31,9 +29,7 @@ btn.addEventListener("click", (e) => {
     } else {
 
         if (sexo.value == "feminino") {
-            if (imc = 0){
-                resultado.innerHTML = "Insira Valores";
-            } else if (imc < 18.5) {
+            if (imc < 18.5) {
                 imagemResultado.innerHTML = `<img src="imagens/6.png" alt="">`;
             } else if (imc > 18.6 && imc <= 24.9) {
                 imagemResultado.innerHTML = `<img src="imagens/7.png" alt="">`;
